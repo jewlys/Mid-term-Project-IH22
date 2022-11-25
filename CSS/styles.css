@@ -1,64 +1,24 @@
 @font-face {
-    font-family: "Heading1";
-    src: url(../Fonts/Roboto-Bold.ttf);
-    font-size: 60px;
-}
-
-@font-face {
-    font-family: "Heading2";
-    src: url(../Fonts/Roboto-Bold.ttf);
-    font-size: 50px;
-}
-
-@font-face {
-    font-family: "Heading3";
-    src: url(../Fonts/Roboto-Bold.ttf);
-    font-size: 40px;
-}
-
-@font-face {
-    font-family: "Heading4";
-    src: url(../Fonts/Roboto-Bold.ttf);
-    font-size: 24px;
-}
-
-@font-face {
-    font-family: "BodyMedium";
-    src: url(../Fonts/Roboto-Medium.ttf);
-    font-size: 24px;
-}
-
-@font-face {
-    font-family: "BodyRegular";
+    font-family: "Roboto";
     src: url(../Fonts/Roboto-Regular.ttf);
-    font-size: 20px;
-}
-
-@font-face {
-    font-family: "HeadlineRegular";
-    src: url(../Fonts/Roboto-Regular.ttf);
-    font-size: 17px;
-}
-
-@font-face {
-    font-family: "HeadlineMedium";
-    src: url(../Fonts/Roboto-Medium.ttf);
-    font-size: 17px;
-}
-
-@font-face {
-    font-family: "Caption1";
-    src: url(../Fonts/Roboto-Regular.ttf);
-    font-size: 15px;
-}
-
-@font-face {
-    font-family: "Caption2";
-    src: url(../Fonts/Roboto-Regular.ttf);
-    font-size: 13px;
 }
 
 :root {
+    /* Fonts */
+    --roboto: "Roboto";
+    --bold: 700;
+    --medium: 500;
+    --regular: 400;
+    --txt60: 60px;
+    --txt50: 50px;
+    --txt40: 40px;
+    --txt24: 24px;
+    --txt20: 20px;
+    --txt17: 17px;
+    --txt15: 15px;
+    --txt13: 13px;
+
+    /* Colors */
     --darkBlue: #072AC8;
     --neutralBlue: #43D2FF;
     --mediumBlue: #A2D6F9;
