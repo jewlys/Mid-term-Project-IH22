@@ -2,7 +2,7 @@
 
 :root {
     /* fonts */
-    --web-headline-medium: Roboto;
+    --web-headline-medium: "Roboto";
     --font-poppins: Poppins;
   
     /* font sizes */

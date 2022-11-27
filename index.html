@@ -1,410 +1,312 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title>Ironhack Project</title>
-    <meta name="description" content="ironhack project"/>
 
-    <link rel="stylesheet" href="CSS/global.css"/>
-    <!-- <link rel="stylesheet" href="./index.css"/> -->
-    <link rel="stylesheet" href="CSS/styles.css">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <title>Mid-term-Project-IH22</title>
+  <meta name="description" content="" />
 
-  </head>
-  <body>
-    <div class="homepage-div">
-      <div class="footer-section-div">
-        <div class="container-div">
-          <div class="links-div">
-            <div class="group-div">
-              <div class="frame-div">
-                <div class="frame-div1">
-                  <div class="team-div">Team</div>
-                  <div class="team-div">Press</div>
-                </div>
-                <div class="frame-div1">
-                  <div class="team-div">Services</div>
-                  <div class="team-div">Projects</div>
-                </div>
-                <div class="frame-div1">
-                  <div class="team-div">About Us</div>
-                  <div class="team-div">Privacy Policy</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content-div">
-            <div class="westheimer-rd-santa-ana-illi">
-              2972 Westheimer Rd. Santa Ana, Illinois 85486
-            </div>
-            <img class="logo-icon" alt="" src="public/logo.svg" />
-          </div>
-        </div>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link rel="stylesheet" href="CSS/global.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+  />
+</head>
+
+<!-- /* Sección Navbar */ -->
+
+<body>
+  <nav class="nav-bar">
+    <a href="index.html"><img class="circle" alt="logo circle" src="IMG/logos/circle.svg" /> </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+    <div class="contact">
+      <button class="btn"><a title="Fill up the form" href="contact.html">Contact Us</a></button></div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- /* Section Hero */ -->
+
+  <section class="hero-section">
+    <div class="content-div1">
+      <h1>Empower Your Business With Stunning Design!</h1>
+      <h3>Circle is a digital design and development studio. We design and develop astonishing websites and mobile
+        apps.</h3>
+      <ul>
+        <a class="btn" href="#">Get in touch</a></li>
+        <a href="projects.html">See our work</a></li>
+      </ul>
+    </div>
+    <div class="image-box">
+      <img class="img-hero" src="/IMG/hero-section/hero-image.png" alt="image hero">
+      <img class="img-card1" src="/IMG/hero-section/card-1.png" alt="card 1">
+      <img class="img-card2" src="/IMG/hero-section/card-2.png" alt="card 2">
+    </div>
+  </section>
+
+  <!-- /* Sección Costumers */ -->
+  <section class="costumers">
+    <img src="/IMG/logos/airbnb-logo.svg" alt="Airbnb logo" class="img-client">
+    <img src="/IMG/logos/google-logo.svg" alt="Google logo" class="img-client">
+    <img src="/IMG/logos/microsoft-logo.svg" alt="Microsoft logo" class="img-client">
+    <img src="/IMG/logos/fedex-logo.svg" alt="Fedex logo" class="img-client">
+    <img src="/IMG/logos/amazon-logo.svg" alt="Amazon logo" class="img-client">
+
+  </section>
+
+  <!-- /* Sección Projects */ -->
+  <section class="project-section">
+    <h2>Recent Projects</h2>
+    <div class="projects">
+      <div class="project-block">
+        <img class="img-project" src="./IMG/projects-section/1.jpg" alt="Project image">
+        <h4>Simplify</h4>
+        <p>UI Design & App Development</p>
+        <a href="#" class="learn-more">Learn More</a>
       </div>
-      <div class="navbar-div">
-        <div class="container-nav">
-          <img class="logo-icon1" alt="" src="public/logo1.svg" />
-          <div class="menu-div">
-            <div class="home-div">Home</div>
-            <div class="contact-us-div">Projects</div>
-            <div class="contact-us-div">Services</div>
-          </div>
-          <div class="frame-div4">
-            <div class="contact-us-div">Contact Us</div>
-          </div>
-        </div>
+      <div class="project-block">
+        <img class="img-project" src="./IMG/projects-section/2.jpg" alt="Project image">
+        <h4>Dashcoin</h4>
+        <p>Web Development</p>
+        <a href="#" class="learn-more">Learn More</a>
       </div>
-      <nav class="navbar">
-        <nav class="container-nav">
-          <img class="logo-icon2" alt="" src="public/logo2.svg" />
-          <nav class="menu-div" id="nav-menu">
-            <button class="home-button" autofocus id="homeButton">Home</button
-            ><button class="projects-button" autofocus id="projectsButton">
-              Projects</button
-            ><button class="projects-button" autofocus id="servicesButton">
-              Services
-            </button>
-          </nav>
-          <button class="frame-button" autofocus id="frameButton">
-            <div class="get-in-touch">Contact Us</div>
-          </button>
-        </nav>
-      </nav>
-      <div class="client-section-div" id="brands">
-        <img class="container-icon" alt="" src="public/container.svg" /><img
-          class="container-icon"
-          alt=""
-          src="public/clients-grayscale.svg"
-        />
-      </div>
-      <div class="hero-section-div" data-scroll-to="heroSectionContainer">
-        <div class="container-div2">
-          <div class="content-div1">
-            <button class="see-our-work" autofocus id="seeOurWork">
-              See our work</button
-            ><button class="frame-button1" autofocus id="frameButton1">
-              <div class="get-in-touch">Get in touch</div></button
-            ><textarea
-              class="empower-your-business-with-stu"
-              placeholder="Heading-H1"
-              data-animate-on-scroll
-            >
-Empower Your Business With Stunning Design!</textarea
-            ><b class="circle-is-a-digital-design-and"
-              >Circle is a digital design and development studio. We design and
-              develop astonishing websites and mobile apps.</b
-            >
-          </div>
-          <div class="image-div" id="yellowMan">
-            <img
-              class="hero-image-icon"
-              alt=""
-              src="public/hero-image@2x.png"
-            />
-            <div class="card-2-div">
-              <div class="rectangle-div"></div>
-              <div class="group-div1">
-                <div class="group-div2">
-                  <div class="rectangle-div1"></div>
-                  <img
-                    class="image-68-icon"
-                    alt=""
-                    src="public/image-68@2x.png"
-                  />
-                </div>
-                <div class="project-has-been-accepted">
-                  Project has been accepted.
-                </div>
-              </div>
-            </div>
-            <div class="card-1-div">
-              <aside class="rectangle-aside" id="cardChoose"></aside>
-              <img
-                class="pagination-dots-icon"
-                alt=""
-                src="public/pagination-dots.svg"
-              />
-              <div class="title-div">Choose your card</div>
-              <div class="group-div3">
-                <div class="rectangle-div2"></div>
-                <img class="group-icon" alt="" src="public/group.svg" />
-                <div class="title-div1">2130</div>
-                <img
-                  class="ellipse-icon"
-                  alt=""
-                  src="public/ellipse-12.svg"
-                /><img
-                  class="ellipse-icon1"
-                  alt=""
-                  src="public/ellipse-16.svg"
-                /><img
-                  class="ellipse-icon2"
-                  alt=""
-                  src="public/ellipse-20.svg"
-                /><img
-                  class="ellipse-icon3"
-                  alt=""
-                  src="public/ellipse-13.svg"
-                /><img
-                  class="ellipse-icon4"
-                  alt=""
-                  src="public/ellipse-17.svg"
-                /><img
-                  class="ellipse-icon5"
-                  alt=""
-                  src="public/ellipse-21.svg"
-                /><img
-                  class="ellipse-icon6"
-                  alt=""
-                  src="public/ellipse-14.svg"
-                /><img
-                  class="ellipse-icon7"
-                  alt=""
-                  src="public/ellipse-18.svg"
-                /><img
-                  class="ellipse-icon8"
-                  alt=""
-                  src="public/ellipse-22.svg"
-                /><img
-                  class="ellipse-icon9"
-                  alt=""
-                  src="public/ellipse-15.svg"
-                /><img
-                  class="ellipse-icon10"
-                  alt=""
-                  src="public/ellipse-19.svg"
-                /><img
-                  class="ellipse-icon11"
-                  alt=""
-                  src="public/ellipse-23.svg"
-                />
-              </div>
-              <button class="back-button">Back</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="projects-section-div">
-        <div class="container-div3">
-          <h3 class="recent-projects-h3">Recent Projects</h3>
-          <div class="projects-div2">
-            <div class="project-1-div">
-              <div class="rectangle-div3"></div>
-              <img
-                class="rectangle-icon"
-                alt=""
-                src="public/rectangle-71@2x.png"
-              />
-              <div class="simplify-div">Simplify</div>
-              <div class="ui-design-app-development">
-                UI Design & App Development
-              </div>
-              <div class="learn-more-div">Learn more</div>
-            </div>
-            <div class="project-2-div">
-              <div class="rectangle-div3"></div>
-              <img
-                class="rectangle-icon"
-                alt=""
-                src="public/rectangle-711@2x.png"
-              />
-              <div class="simplify-div">Dashcoin</div>
-              <div class="ui-design-app-development">Web Development</div>
-              <div class="learn-more-div">Learn more</div>
-            </div>
-            <div class="project-3-div">
-              <div class="rectangle-div3"></div>
-              <img
-                class="rectangle-icon"
-                alt=""
-                src="public/rectangle-712@2x.png"
-              />
-              <div class="simplify-div">Vectorify</div>
-              <div class="ui-design-app-development">
-                User Experience Design
-              </div>
-              <div class="learn-more-div">Learn more</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section
-        class="services-section"
-        id="services"
-        data-scroll-to="servicesSectionContainer"
-      >
-        <div class="container-div4">
-          <h3 class="our-services-h3">Our Services</h3>
-          <div class="services-div2" id="blocks">
-            <article class="service-1-article" id="block1">
-              <div class="rectangle-div6"></div>
-              <div class="learn-more-div3">Learn more</div>
-              <div class="user-interface-design">User Interface Design</div>
-              <div class="circle-provides-you-with-a-stu">
-                Circle provides you with a stunning user interface design that
-                is accessible to everyone.
-              </div>
-              <img class="icon" alt="" src="public/icon.svg" />
-            </article>
-            <div class="service-2-div" id="block2">
-              <div class="rectangle-div6"></div>
-              <div class="learn-more-div3">Learn more</div>
-              <div class="user-interface-design">User Experience Design</div>
-              <div class="circle-provides-you-with-a-stu">
-                Circle always focuses on delivering the best user experience to
-                your customers.
-              </div>
-              <img class="icon" alt="" src="public/icon1.svg" />
-            </div>
-            <div class="service-3-div" id="block3">
-              <div class="rectangle-div6"></div>
-              <div class="learn-more-div3">Learn more</div>
-              <div class="user-interface-design">Application Development</div>
-              <div class="circle-provides-you-with-a-stu">
-                We develop high-quality mobile and web applications using the
-                latest technology stack.
-              </div>
-              <img class="icon" alt="" src="public/icon2.svg" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="testimonial-section" id="testimonial">
-        <div class="bg-div"></div>
-        <img class="orbit-icon" alt="" src="public/orbit.svg" />
-        <div class="container-div5">
-          <div class="content-div2">
-            <h6 class="hear-what-our-clients-have-to">
-              Hear What Our Clients Have to Say
-            </h6>
-            <blockquote class="circle-helped-us-through-every">
-              “Circle helped us through every stage of our startup. We really
-              enjoyed working with you.”
-            </blockquote>
-            <aside class="clients-information-aside">
-              <img
-                class="ellipse-icon12"
-                alt=""
-                src="public/ellipse-24@2x.png"
-              />
-              <div class="group-div4" id="example">
-                <p class="bookingcom-p">Booking.com</p>
-                <h6 class="kristin-watson-h6">Kristin Watson</h6>
-              </div>
-            </aside>
-          </div>
-        </div>
-        <div class="memojis-div">
-          <img
-            class="characterkim-skin-tonewhite"
-            alt=""
-            src="public/characterkim-skin-tonewhite-posture26-crossing-finger@2x.png"
-          />
-          <div class="personmattew-skin-tonewhite">
-            <img class="icon3" alt="" src="public/13-5@2x.png" />
-          </div>
-          <div class="characterangela-skin-tonewh">
-            <img class="icon3" alt="" src="public/9-1@2x.png" />
-          </div>
-          <img
-            class="personed-skin-tonewhite-po"
-            alt=""
-            src="public/personed-skin-tonewhite-posture16-winking@2x.png"
-          />
-        </div>
-      </section>
-      <div class="cta-section-div">
-        <div class="bg-div1"></div>
-        <div class="container-div6">
-          <b class="do-you-have-any-questions">Do you have any questions?</b>
-          <div class="let-us-help-you">Let us help you!</div>
-          <div class="text-field-div">
-            <div class="rectangle-div9"></div>
-            <img
-              class="mail32x321x-1-icon"
-              alt=""
-              src="public/mail32x321x-1.svg"
-            />
-            <div class="enter-your-email">Enter your email</div>
-          </div>
-          <div class="subscribe-div">
-            <div class="contact-us-div">Subscribe</div>
-          </div>
-        </div>
+      <div class="project-block">
+        <img class="img-project" src="./IMG/projects-section/3.jpg" alt="Project image ">
+        <h4>Vectorify</h4>
+        <p>User Experience Design</p>
+        <a href="#" class="learn-more">Learn More</a>
       </div>
     </div>
+  </section>
 
-    <script>
-      var homeButton = document.getElementById("homeButton");
-      if (homeButton) {
-        homeButton.addEventListener("click", function () {
-          var anchor = document.querySelector(
-            "[data-scroll-to='heroSectionContainer']"
-          );
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
+  <!-- /* Sección Clients-->
+  <section class="testimonial">
+    <div class="memojis">
+      <img class="memoji1" src="./IMG/testimonial-section/memoji-1.png" alt="Memoji 1">
+      <img class="memoji2" src="./IMG/testimonial-section/memoji-2.png" alt="Memoji 2">
+      <img class="memoji3" src="./IMG/testimonial-section/memoji-3.png" alt="Memoji 3">
+      <img class="memoji4" src="./IMG/testimonial-section/memoji-4.png" alt="Memoji 4">
+    </div>
+    <div class="testimonial-text">
+      <h3>Hear What Our Clients Have to Say</h3>
+      <p>"Circle helped us through every stage of our startup. We really enjoyed working with you"</p>
+    </div>
+
+    <div class="testimonial-profile">
+      <img src="./IMG/testimonial-section/profile.png" alt="profile" class="profile">
+      <div class="testimonial-info">
+        <p class="client-name">Kristen Watson</p>
+        <p class="client-web">Booking.com</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- /* Sección Services -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-cont">
+      <div class="services-card">
+        <div class="service-box">
+          <img src="./IMG/services-section/icons/1.svg" alt="pen icon">
+          </div>
+          <h4>User Interface Design</h4>
+          <p>Circle provides you with a stunning user interface design that is accesible to everyone</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
       
-      var projectsButton = document.getElementById("projectsButton");
-      if (projectsButton) {
-        projectsButton.addEventListener("click", function (e) {
-          // Please sync "Project Page" to the project
-        });
-      }
+      <div class="services-card">
+        <div class="service-box">
+          <img src="./IMG/services-section/icons/2.svg" alt="pointer icon">
+        </div>
+          <h4>User Experience Design</h4>
+          <p>Circle always focuses on delivering the best user experience to your customers.</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
       
-      var servicesButton = document.getElementById("servicesButton");
-      if (servicesButton) {
-        servicesButton.addEventListener("click", function () {
-          var anchor = document.querySelector(
-            "[data-scroll-to='servicesSectionContainer']"
-          );
-          if (anchor) {
-            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
-          }
-        });
-      }
-      
-      var frameButton = document.getElementById("frameButton");
-      if (frameButton) {
-        frameButton.addEventListener("click", function (e) {
-          window.location.href = "./contac-us-page.html";
-        });
-      }
-      
-      var seeOurWork = document.getElementById("seeOurWork");
-      if (seeOurWork) {
-        seeOurWork.addEventListener("click", function (e) {
-          // Please sync "Project Page" to the project
-        });
-      }
-      
-      var frameButton1 = document.getElementById("frameButton1");
-      if (frameButton1) {
-        frameButton1.addEventListener("click", function (e) {
-          window.location.href = "./contac-us-page.html";
-        });
-      }
-      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-      var observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting || entry.intersectionRatio > 0) {
-              const targetElement = entry.target;
-              targetElement.classList.add("animate");
-              observer.unobserve(targetElement);
-            }
-          }
-        },
-        {
-          threshold: 0.15,
+      <div class="services-card">
+        <div class="service-box">
+
+          <img src="./IMG/services-section/icons/3.svg" alt="iframe icon">
+          </div>
+          <h4>Application Development</h4>
+          <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- /* Seccion CTA */ -->
+
+  <section class="cta">
+    <h2>Do you have any questions?</h2>
+    <h3>Let us help you!</h3>
+    <form action="">
+        <input type="email" name="email" id="email" placeholder= "Enter your email">
+        <input type="submit" value="Suscribe">
+    </form>
+</section>
+
+<!-- /* Sección Footer */ -->
+<footer class="footer">
+  <div class="address">
+      <a href="#"><img class="circle" title="Return to home" src="/IMG/logos/circle.svg" alt="logo circle"></a>
+      <p>2972 Westheimer Rd. Santa Ana,<br>
+          Illinois 85486</p>
+  </div>
+  <ul class="sitemap">
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+  </ul>
+</footer>
+
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+  var projectsButton = document.getElementById("projectsButton");
+    if (projectsButton) {
+      projectsButton.addEventListener("click", function (e) {
+        // Please sync "Project Page" to the project
+      });
+    }
+
+    var servicesButton = document.getElementById("servicesButton");
+    if (servicesButton) {
+      servicesButton.addEventListener("click", function () {
+        var anchor = document.querySelector(
+          "[data-scroll-to='servicesSectionContainer']"
+        );
+        if (anchor) {
+          anchor.scrollIntoView({ block: "start", behavior: "smooth" });
         }
-      );
-      
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.observe(scrollAnimElements[i]);
+      });
+    }
+
+    var frameButton = document.getElementById("frameButton");
+    if (frameButton) {
+      frameButton.addEventListener("click", function (e) {
+        // Please sync "Contac Us Page" to the project
+      });
+    }
+
+    var groupImage = document.getElementById("groupImage");
+    if (groupImage) {
+      groupImage.addEventListener("click", function () {
+        window.open("https://www.google.es/");
+      });
+    }
+
+    var groupImage1 = document.getElementById("groupImage1");
+    if (groupImage1) {
+      groupImage1.addEventListener("click", function () {
+        window.open("https://www.airbnb.es/");
+      });
+    }
+
+    var groupImage2 = document.getElementById("groupImage2");
+    if (groupImage2) {
+      groupImage2.addEventListener("click", function () {
+        window.open("https://www.microsoft.com/es-es");
+      });
+    }
+
+    var fedExLogo1 = document.getElementById("fedExLogo1");
+    if (fedExLogo1) {
+      fedExLogo1.addEventListener("click", function () {
+        window.open("https://www.fedex.com/es-es/home.html");
+      });
+    }
+
+    var groupImage3 = document.getElementById("groupImage3");
+    if (groupImage3) {
+      groupImage3.addEventListener("click", function () {
+        window.open("amazon.com");
+      });
+    }
+
+    var seeOurWork = document.getElementById("seeOurWork");
+    if (seeOurWork) {
+      seeOurWork.addEventListener("click", function (e) {
+        // Please sync "Project Page" to the project
+      });
+    }
+
+    var frameButton1 = document.getElementById("frameButton1");
+    if (frameButton1) {
+      frameButton1.addEventListener("click", function (e) {
+        // Please sync "Contac Us Page" to the project
+      });
+    }
+
+    var learnMoreButton = document.getElementById("learnMoreButton");
+    if (learnMoreButton) {
+      learnMoreButton.addEventListener("click", function (e) {
+        // Please sync "Project Page" to the project
+      });
+    }
+    var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+    var observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
       }
-      </script>
-  </body>
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }  
+  </script>
+</body>
+
 </html>
