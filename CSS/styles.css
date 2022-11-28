@@ -55,6 +55,10 @@
     background-color: var(--mediumGrey);
 }
 
+.bg-medium-grey-op1{ 
+    background-color: rgba(107, 112, 141, 0.1);;
+}
+
 .bg-light-grey{ 
     background-color: var(--lightGrey);
 }
