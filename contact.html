@@ -4,52 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Mid-term-Project-IH22</title>
 </head>
-<body>
+<body class="bg-light-grey">
     <!-- Section nav -->
-    <header>
-        <nav>
-            <img alt="logo" src="IMG/logos/circle.svg"/>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>Projects</a></li>
-                <li><a>Services</a></li>
+    <header class="w-auto md:mx-72 md:mt-20 mx-0 my-7">
+        <nav class="flex flex-col justify-between md:flex-row">
+            <img alt="logo" src="IMG/logos/circle.svg" class="w-40 m-auto md:m-0"/>
+            <ul class="flex flex-col justify-between items-center my-7 md:flex-row">
+                <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Home</a></li>
+                <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Projects</a></li>
+                <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
             </ul>
-            <button>Contact Us</button>
+            <button class="bg-dark-blue w-fit py-1 px-3 color-white shadow-md regular-17 m-auto md:m-0">Contact Us</button>
         </nav>
     </header>
 
     <!-- Section form -->
-    <section>
-        <h1>Contact Us</h1>
-        <form action="/" method="get">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Enter your full name" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your email address">
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" placeholder="Enter your phone number">
-            <label for="message">Message</label>
-            <textarea id="message" cols="30" rows="10">Write your message here ...</textarea>
-            <button type="submit">Submit</button>
+    <section class="h-auto w-auto mx-5 my-20">
+        <h1 class="md:bold-60 color-dark-grey bold-40 text-center md:text-left mb-8 ">Contact Us</h1>
+        <form action="/" method="get" class="w-auto m-4">
+            <label for="name" class="regular-20 color-medium-grey w-full">Full Name *</label>
+            <input type="text" id="name" placeholder="Enter your full name" required class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4">
+            <label for="email" class="regular-20 color-medium-grey w-full">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4">
+            <label for="phone" class="regular-20 color-medium-grey w-full">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4">
+            <label for="message" class="regular-20 color-medium-grey w-full">Message</label>
+            <textarea id="message" cols="30" rows="10" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4">Write your message here ...</textarea>
+            <button class="bg-dark-blue medium-17 color-white w-full py-2">Submit</button>
         </form>
     </section>
 
     <!-- Section footer -->
-    <footer>
-        <div>
+    <footer class="w-auto mx-9 flex flex-col md:flex-row">
+        <div class="my-16">
             <img alt="logo" src="IMG/logos/circle.svg" />
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            <p class="regular-17 color-medium-grey mt-6">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
         </div>
         <div>
-            <ul>
-                <li>Team</li>
-                <li>Press</li>
-                <li>Services</li>
-                <li>Projects</li>
-                <li>About Us</li>
-                <li>Privacy Policy</li>
+            <ul class="grid grid-cols-3 gap-y-4">
+                <li class="color-medium-grey regular-17"><a href="#">Team</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Press</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Services</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Projects</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">About Us</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Privacy Policy</a></li>
             </ul>
         </div>
     </footer>
