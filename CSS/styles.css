@@ -158,14 +158,18 @@
     font-weight: var(--regular);
     font-size: var(--txt13);
 }
+
 /* Gaps */
---gap-sm: 60px;
---gap-md: 106px;
+:root{
+    --gap-sm: 60px;
+    --gap-md: 106px;
 
-/* Paddings */
---padding-sm: 15px;
---padding-md: 36px;
---padding-lg: 37px;
+    /* Paddings */
+    --padding-sm: 15px;
+    --padding-md: 36px;
+    --padding-lg: 37px;
 
-/* border radiuses */
---br-md: 30px;
+    /* border radiuses */
+    --br-md: 30px;
+}
+
