@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <title></title>
+    <title>Mid-term-Project-IH22</title>
     <meta name="description" content="" />
-    <link rel="stylesheet" href="index.css" />
-
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-      <header>
-        <nav>
-          <img alt="logo" src=""/>
-          <div>
-            <a>Home</a>
-            <a>Projects</a>
-            <a>Services</a>
-          </div>
-          <button>Contact Us</button>
-        </nav>
-      </header>
+  <body class="bg-light-grey">
+    <!-- Section nav -->
+    <header class="w-auto md:my-10 mx-0 my-7 md:w-8/12 md:mx-auto">
+      <nav class="flex flex-col justify-between md:flex-row">
+          <img alt="logo" src="IMG/logos/circle.svg" class="w-40 m-auto md:m-0 md:w-16"/>
+          <ul class="flex flex-col justify-between items-center my-7 md:flex-row">
+              <li class="md:mx-16 regular-17 color-medium-grey"><a href="index.html">Home</a></li>
+              <li class="md:mx-16 regular-17 color-medium-grey"><a href="project.html">Projects</a></li>
+              <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
+          </ul>
+          <button class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a href="">Contact Us</a></button>
+      </nav>
+  </header>
       
-      <section>
+    <!-- Section project -->
+      <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
           <div>
-            <h1>Simplify</h1>
-            <p>UI Design & App Development</p>
-            <p><span>Completed on</span><span> June 22, 2021</span></p>
-            <img alt="simplify img" src=""/>
-            <p>
+            <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:mb-2">Simplify</h1>
+            <p><span class="medium-24 color-medium-grey float-left">UI Design & App Development</span> 
+            <span class="md:float-right float-left my-2 md:my-0"><span class="regular-20">Completed on</span><span class="regular-20 color-medium-grey"> June 22, 2021</span></span></p>
+            <div class="relative md:mt-20">
+              <img alt="simplify img" src="IMG/projects-section/1.jpg" class="hidden md:inline md:w-full md:max-h-96 object-cover blur-md"/>
+              <img alt="simplify img" src="IMG/projects-section/1.jpg" class="md:absolute md:top-0 md:w-full md:h-96 object-cover"/>
+            </div>
+            <!-- <div id="project-img"></div> -->
+            <p class="regular-20 color-medium-grey md:leading-7 my-12"> 
               Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
               qui esse pariatur duis deserunt mollit dolore cillum minim tempor
               enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut
@@ -39,10 +45,10 @@
               Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis
               deserunt mollit dolore cillum minim tempor enim. Elit aute irure
               tempor cupidatat incididunt sint deserunt ut voluptate aute id
-              deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id
+              deserunt nisi.<br><br>  Aliqua id fugiat nostrud irure ex duis ea quis id
               quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore
               cillum minim tempor enim. Elit aute irure tempor cupidatat
-              incididunt sint deserunt ut voluptate aute id deserunt nisi.
+              incididunt sint deserunt ut voluptate aute id deserunt nisi. 
               Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore
               cillum minim tempor enim. Elit aute irure tempor cupidatat
               incididunt sint deserunt ut voluptate aute id deserunt nisis ea
@@ -57,59 +63,64 @@
           </div>
       </section>
 
-      <section>
-          <h3>Other Projects</h3>
-          <div>
-            <div>
-              <img alt="orbit img"src=""/>
-              <p>Orbit</p>
-              <p>UI Design</p>
-              <a>Learn more</a>
+      <!-- Section other projects -->
+      <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+          <h3 class="bold-40 color-dark-grey my-6">Other Projects</h3>
+          <div class="flex flex-col md:flex-row md:justify-between">
+            <div class="bg-white my-8 md:w-96 shadow-lg">
+              <img alt="orbit img" src="IMG/projects-section/4.jpg" class="md:h-60 md:w-full"/>
+              <div class="p-6 text-left md:pb-10">
+                <p class="medium-24 color-dark-grey">Orbit</p>
+                <p class="regular-17 color-medium-grey mt-2 mb-8">UI Design</p>
+                <a class="regular-17 color-dark-blue cursor-pointer" href="#">Learn more</a>
+              </div>
             </div>
-            <div>
-              <img alt="purify img"src=""/>
-              <p>Purify</p>
-              <p>UI/UX Design</p>
-              <a>Learn more</a>
+            <div class="bg-white my-8 md:w-96 shadow-lg">
+              <img alt="purify img" src="IMG/projects-section/5.jpg" class="md:h-60 md:w-full"/>
+              <div class="p-6 text-left md:pb-10">
+                <p class="medium-24 color-dark-grey">Purify</p>
+                <p class="regular-17 color-medium-grey mt-2 mb-8">UI/UX Design</p>
+                <a class="regular-17 color-dark-blue cursor-pointer" href="#">Learn more</a>
+              </div>
             </div>
-            <div>
-              <img alt="cryptopie img"src=""/>
-              <p>CryptoPie</p>
-              <p>App Development</p>
-              <a>Learn more</a>
+            <div class="bg-white my-8 md:w-96 shadow-lg">
+              <img alt="cryptopie img" src="IMG/projects-section/6.jpg" class="md:h-60 md:w-full"/>
+              <div class="p-6 text-left md:pb-10">
+                <p class="medium-24 color-dark-grey">CryptoPie</p>
+                <p class="regular-17 color-medium-grey mt-2 mb-8">App Development</p>
+                <a class="regular-17 color-dark-blue cursor-pointer" href="#">Learn more</a>
+              </div>
             </div>
           </div>
       </section>
 
-      <section>
-          <h3>Do you have any questions?</h3>
-          <p>Let us help you!</p>
-          <input type="email"/>
-          <button>Subscribe</button>
+      <!-- Section questions -->
+      <section class="h-auto w-auto mx-5 my-20 md:w-9/12 md:mx-auto bg-yellow p-12 flex flex-col md:py-20">
+          <h3 class="bold-40 color-dark-grey text-center">Do you have any questions?</h3>
+          <p class="regular-20 color-dark-grey text-center mt-5">Let us help you!</p>
+          <div class="mt-10 mb-5 relative text-center md:w-3/6 md:mx-auto">
+            <input type="email" placeholder="Enter your email" class="p-4 md:pl-14"/>
+            <img src="img/newsletter/icon/mail.svg" alt="mail icon" class="hidden lg:inline lg:absolute md:top-7 md:left-36">
+            <button class="medium-17 bg-dark-blue color-white py-4 px-8 mx-auto mt-4 md:ml-4">Subscribe</button>
+          </div>
       </section>
 
-      <footer>
-          
-          <div>
-            <img alt="logo" src="" />
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-          </div>
-
-          <div>
-            <div>
-              <p>Team</p>
-              <p>Press</p>
-            </div>
-            <div>
-              <p>Services</p>
-              <p>Projects</p>
-            </div>
-            <div>
-              <p>About Us</p>
-              <p>Privacy Policy</p>
-            </div>
-          </div>
-
-      </footer>
+      <!-- Section footer -->
+      <footer class="w-auto mx-9 mb-16 flex flex-col md:flex-row md:justify-between md:w-8/12 md:mx-auto md:mt-36">
+        <div class="my-16 md:my-0">
+            <img alt="logo" src="IMG/logos/circle.svg" />
+            <p class="regular-17 color-medium-grey mt-6">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div>
+            <ul class="grid grid-cols-3 gap-y-4">
+                <li class="color-medium-grey regular-17"><a href="#">Team</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Press</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Services</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Projects</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">About Us</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
   </body>
 </html>

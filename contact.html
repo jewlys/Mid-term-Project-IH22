@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Mid-term-Project-IH22</title>
+</head>
+<body class="bg-light-grey">
+    <!-- Section nav -->
+    <header class="w-auto md:my-10 mx-0 my-7 md:w-8/12 md:mx-auto">
+        <nav class="flex flex-col justify-between md:flex-row">
+            <img alt="logo" src="IMG/logos/circle.svg" class="w-40 m-auto md:m-0 md:w-16"/>
+            <ul class="flex flex-col justify-between items-center my-7 md:flex-row">
+                <li class="md:mx-16 regular-17 color-medium-grey"><a href="index.html">Home</a></li>
+                <li class="md:mx-16 regular-17 color-medium-grey"><a href="project.html">Projects</a></li>
+                <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
+            </ul>
+            <button class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3">Contact Us</button>
+        </nav>
+    </header>
+
+    <!-- Section form -->
+    <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+        <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:ml-3 md:mb-12">Contact Us</h1>
+        <form action="/" method="get" class="w-auto m-4 md:grid md:grid-cols-2">
+            <label for="name" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-1">Full Name *</label>
+            <input type="text" id="name" placeholder="Enter your full name" required class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-2">
+            <label for="email" class="regular-20 color-medium-grey w-full md:order-3">Email</label>
+            <input type="email" id="email" placeholder="Enter your email address" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:order-5 md:w-11/12">
+            <label for="phone" class="regular-20 color-medium-grey w-full md:order-4">Phone</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:order-6">
+            <label for="message" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-7">Message</label>
+            <textarea id="message" cols="30" rows="10" placeholder="Write your message here ..." class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-8"></textarea>
+            <button class="bg-dark-blue medium-17 color-white w-full py-2 md:order-9 md:col-span-2 md:py-4">Submit</button>
+        </form>
+    </section>
+
+    <!-- Section footer -->
+    <footer class="w-auto mx-9 mb-16 flex flex-col md:flex-row md:justify-between md:w-8/12 md:mx-auto md:mt-36">
+        <div class="my-16 md:my-0">
+            <img alt="logo" src="IMG/logos/circle.svg" />
+            <p class="regular-17 color-medium-grey mt-6">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+        </div>
+        <div>
+            <ul class="grid grid-cols-3 gap-y-4">
+                <li class="color-medium-grey regular-17"><a href="#">Team</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Press</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Services</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Projects</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">About Us</a></li>
+                <li class="color-medium-grey regular-17"><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
