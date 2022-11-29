@@ -32,6 +32,17 @@
     --lightGrey: #F2F4FC;
     --skyBlue: #ECF7FF;
     --yellow: #FFC600;
+    /* Gaps */
+--gap-sm: 60px;
+--gap-md: 106px;
+
+/* Paddings */
+--padding-sm: 15px;
+--padding-md: 36px;
+--padding-lg: 37px;
+
+    /* border radiuses */
+  --br-md: 30px;
 }
 
 *{
@@ -158,20 +169,5 @@
     font-weight: var(--regular);
     font-size: var(--txt13);
 }
-/* Gaps */
---gap-sm: 60px;
---gap-md: 106px;
 
-/* Paddings */
---padding-sm: 15px;
---padding-md: 36px;
---padding-lg: 37px;
 
-<<<<<<< HEAD
-/* border radiuses */
---br-md: 30px;
-=======
-    /* border radiuses */
-    --br-md: 30px;
-}
->>>>>>> 6270e6b4c579b828b91aba3b1e712eb0b2c3e859
