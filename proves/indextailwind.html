@@ -6,49 +6,45 @@
   <meta name="viewport" content="initial-scale=1, width=device-width" />
   <title>Mid-term-Project-IH22</title>
   <meta name="description" content="" />
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="stylesheet" href="./proves/indexfalso.css" /> 
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-light-grey">
   <!-- /* Sección Navbar */ -->
-  <nav class="nav-bar">
-    <a href="index.html"><img class="circle" alt="logo circle" src="IMG/logos/circle.svg" /> </a>
+  <header class="w-auto md:my-10 mx-0 my-7 md:w-8/12 md:mx-auto">
+  <nav class="flex flex-col justify-between md:flex-row">
+    <img class="w-40 m-auto md:m-0 md:w-16 " alt="logo circle" src="../IMG/logos/circle.svg" /> </a>
 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="#">Services</a></li>
+    <ul class="flex flex-col justify-between items-center my-7 md:flex-row">
+      <li class="md:mx-16 regular-17 color-medium-grey"><a href="index.html">Home</a></li>
+      <li class="md:mx-16 regular-17 color-medium-grey"><a href="project.html">Projects</a></li>
+      <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
     </ul>
-    <div class="contact">
-      <button class="btn"><a title="Fill up the form" href="contact.html">Contact Us</a></button>
-    </div>
-    </div>
+    <button class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a title="Fill up the form" href="contact.html">Contact Us</a></button>
   </nav>
+</header>
 
   <!-- /* Section Hero */ -->
-  <section class="">
-    <div class="">
-      <h1>Empower Your Business With Stunning Design!</h1>
-      <h3>Circle is a digital design and development studio. We design and develop astonishing websites and mobile
+  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+    <div class= "mx-10 top-6">
+      <h1 class="md:bold-60 color-dark-grey bold-40  ">Empower Your Business With Stunning Design!</h1>
+      <h3 class="md:regular 20 regular 17 color-medium-grey m-3  ">Circle is a digital design and development studio. We design and develop astonishing websites and mobile
         apps.</h3>
       <ul>
-        <a class="btn" href="#">Get in touch</a></li>
-        <a href="projects.html">See our work</a></li>
+        <a class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3" href="#">Get in touch</a></li>
+        <a class = "w-fit px-3 py-1 color-medium-grey  regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3" href="projects.html">See our work</a></li>
       </ul>
     </div>
-    <div class="image-box">
-      <img class="img-hero" src="/IMG/hero-section/hero-image.png" alt="image hero">
-      <img class="img-card1" src="/IMG/hero-section/card-1.png" alt="card 1">
-      <img class="img-card2" src="/IMG/hero-section/card-2.png" alt="card 2">
+    <div class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+      <img class="w-96 float-right" src="/IMG/hero-section/hero-image.png" alt="image hero">
+      <img class=" " src="/IMG/hero-section/card-1.png" alt="card 1">
+      <img class="" src="/IMG/hero-section/card-2.png" alt="card 2">
     </div>
   </section>
 
   <!-- /* Sección Costumers */ -->
-  <section class="costumers">
+  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
     <img src="/IMG/logos/airbnb-logo.svg" alt="Airbnb logo" class="img-client">
     <img src="/IMG/logos/google-logo.svg" alt="Google logo" class="img-client">
     <img src="/IMG/logos/microsoft-logo.svg" alt="Microsoft logo" class="img-client">
@@ -133,34 +129,34 @@
     </div>
   </section>
 
-  <!-- /* Seccion CTA */ -->
-  <section class="cta">
-    <h2>Do you have any questions?</h2>
-    <h3>Let us help you!</h3>
-    <form action="">
+  <!-- /* Seccion Q&E */ -->
+  <section class="h-auto w-auto mx-5 my-20 md:w-9/12 md:mx-auto bg-yellow p-12 flex flex-col">
+    <h2 class="md:bold-40 bold-24 color-dark-grey text-center">Do you have any questions?</h2>
+    <h3 class="md:regular-20 regular-17 color-dark-grey text-center mt-5">Let us help you!</h3>
+    <form class="mt-10 mb-5 relative text-center md:w-3/6 md:mx-auto"action="">
       <input type="email" name="email" id="email" placeholder="Enter your email">
       <input type="submit" value="Suscribe">
     </form>
   </section>
 
   <!-- /* Sección Footer */ -->
-  <footer class="footer">
-    <div class="address">
+  <footer class="w-auto mx-9 mb-16 flex flex-col md:flex-row md:justify-between md:w-8/12 md:mx-auto md:mt-36">
+    <div class="my-16 md:my-0">
       <a href="#"><img class="circle" title="Return to home" src="/IMG/logos/circle.svg" alt="logo circle"></a>
-      <p>2972 Westheimer Rd. Santa Ana,<br>
+      <p class="regular-17 color-medium-grey mt-6">2972 Westheimer Rd. Santa Ana,<br>
         Illinois 85486</p>
     </div>
-    <ul class="sitemap">
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+    <ul class="grid grid-cols-3 gap-y-4">
+      <li class="color-medium-grey regular-17"><a href="#">Team</a></li>
+      <li class="color-medium-grey regular-17"><a href="#">Services</a></li>
+      <li class="color-medium-grey regular-17"><a href="#">About Us</a></li>
+      <li class="color-medium-grey regular-17"><a href="#">Press</a></li>
+      <li class="color-medium-grey regular-17"><a href="#">Projects</a></li>
+      <li class="color-medium-grey regular-17"><a href="#">Privacy Policy</a></li>
     </ul>
   </footer>
 
-  <script src="js/app.js"></script>
+  <!--<script src="js/app.js"></script>
   <script>
     var projectsButton = document.getElementById("projectsButton");
     if (projectsButton) {
