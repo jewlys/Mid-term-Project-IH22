@@ -25,9 +25,10 @@ function addProjects(projects){
         const div = `
             <div class="bg-white my-8 md:w-96 shadow-lg">
                 <img class="md:h-60 md:w-full" src="${project.image}" alt="${project.name}">
-                <h4 class="medium-24 color-dark-grey">${project.name}</h4>
-                <p class="md:regular 20 regular 17 color-medium-grey m-3">${project.description}</p>
-                <a class="regular-17 color-dark-blue cursor-pointer" href="uuid=${project.uuid}">Learn More</a>
+                <div class="p-6 text-left md:pb-10">
+                <p class="medium-24 color-dark-grey">${project.name}</p>
+                <p class="md:regular-17 color-medium-grey m-3">${project.description}</p>
+                <a class="regular-17 color-dark-blue cursor-pointer" href="project.html?uuid=${project.uuid}">Learn More</a>
             </div>
         `
         divPrincipal.innerHTML += div;
@@ -38,3 +39,6 @@ function addProjects(projects){
 window.addEventListener('load', () => {
     fetchedProjects()
 })
+
+
+
