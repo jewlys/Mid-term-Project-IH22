@@ -143,8 +143,8 @@
         const postId = params.get("uuid");
 
         const filtered = data.filter((project) => project.uuid === postId)
-        console.log(filtered)
-        addContent(filtered)
+       
+        addContent(filtered[0])
       }
 
       
@@ -162,6 +162,8 @@
             <p class="regular-20 color-medium-grey md:leading-7 my-12">${item.content}</p>
         `
         projectDiv.innerHTML += div;
+
+     
       }
 
       window.addEventListener('load', () => {
