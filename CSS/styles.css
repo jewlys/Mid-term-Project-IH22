@@ -170,16 +170,9 @@
     font-size: var(--txt13);
 }
 
-.bg-image{
-  background-image: url(../IMG/testimonial-section/orbit.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center;  
-}
-
 
 .testimonial{
-    /* background-image: url(../IMG/testimonial-section/orbit.png); */
+    background-image: url(../IMG/testimonial-section/orbit.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
