@@ -1,4 +1,8 @@
 const button = document.getElementById("getintouch");
-button.addEventListener("click", () => {
-    onscroll()
-});
+if (getintouch) {
+    getintouch.addEventListener("click", function (e) {
+    });
+  }
+
+
+
