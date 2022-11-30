@@ -12,27 +12,37 @@
     <!-- Section nav -->
     <header class="w-auto md:my-10 mx-0 my-7 md:w-8/12 md:mx-auto">
       <nav class="flex flex-col justify-between md:flex-row">
-          <img alt="logo" src="IMG/logos/circle.svg" class="w-40 m-auto md:m-0 md:w-16"/>
-          <ul class="flex flex-col justify-between items-center my-7 md:flex-row">
-              <li class="md:mx-16 regular-17 color-medium-grey"><a href="index.html">Home</a></li>
-              <li class="md:mx-16 regular-17 color-medium-grey"><a href="project.html">Projects</a></li>
-              <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
-          </ul>
-          <button class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a href="contact.html">Contact Us</a></button>
+        <div class="flex flex-wrap justify-between items-center">
+          <div>
+        <img class="w-40 m-auto md:m-0 md:w-16 " alt="logo circle" src="../IMG/logos/circle.svg" /> </a>
+      </div>
+      <div class="burger md:hidden">
+        <div class="bar1 h-1 w-7 my-1.5 bg-blue-700 duration-300"></div>
+        <div class="bar2 h-1 w-7 my-1.5 bg-blue-700"></div>
+        <div class="bar3 h-1 w-7 my-1.5 bg-blue-700 duration-300"></div>
+    </div>
+  </div>
+  <ul class="links md:flex flex-col md:flex-row md: justify-around items-center my-7 hidden">
+          <li class="md:mx-16 regular-17 color-medium-grey"><a href="index.html">Home</a></li>
+          <li class="md:mx-16 regular-17 color-medium-grey"><a href="project.html">Projects</a></li>
+          <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
+        </ul>
+        <button
+          class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a
+            title="Fill up the form" href="contact.html">Contact Us</a></button>
       </nav>
-  </header>
+    </header>
       
     <!-- Section project -->
       <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
-          <div>
-            <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:mb-2">Simplify</h1>
+          <div id="projectDiv">
+            <!-- <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:mb-2">Simplify</h1>
             <p><span class="medium-24 color-medium-grey float-left">UI Design & App Development</span> 
             <span class="md:float-right float-left my-2 md:my-0"><span class="regular-20">Completed on</span><span class="regular-20 color-medium-grey"> June 22, 2021</span></span></p>
             <div class="relative md:mt-20">
               <img alt="simplify img" src="IMG/projects-section/1.jpg" class="hidden md:inline md:w-full md:max-h-96 object-cover blur-md"/>
               <img alt="simplify img" src="IMG/projects-section/1.jpg" class="md:absolute md:top-0 md:w-full md:h-96 object-cover"/>
             </div>
-            <!-- <div id="project-img"></div> -->
             <p class="regular-20 color-medium-grey md:leading-7 my-12"> 
               Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt
               qui esse pariatur duis deserunt mollit dolore cillum minim tempor
@@ -59,7 +69,7 @@
               minim tempor enim. Elit aute irure tempor cupidatat incididunt
               sint deserunt ut voluptate aute id deserunt nis cillum minim
               tempor enim.
-            </p>
+            </p> -->
           </div>
       </section>
 
@@ -123,7 +133,42 @@
         </div>
     </footer>
     <script>
+      const API_URL = "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
+
+      async function getUuid(){
+        const response = await fetch(API_URL);
+        const data = await response.json();
+        
+        const params = new URLSearchParams(window.location.search);
+        const postId = params.get("uuid");
+
+        const filtered = data.filter((project) => project.uuid === postId)
+        console.log(filtered)
+        addContent(filtered)
+      }
+
+      
+      function addContent(item){
+        const projectDiv = document.getElementById("projectDiv");
+        const div = `
+        <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:mb-2">${item.name}</h1>
+            <p><span class="medium-24 color-medium-grey float-left">${item.description}</span> 
+            <span class="md:float-right float-left my-2 md:my-0"><span class="regular-20">Completed on</span><span class="regular-20 color-medium-grey"> ${item.completed_on}</span></span></p>
+            <div class="relative md:mt-20">
+              <img alt="${item.name}" src="${item.image}" class="hidden md:inline md:w-full md:max-h-96 object-cover blur-md"/>
+              <img alt="${item.name}" src="${item.image}" class="md:absolute md:top-0 md:w-full md:h-96 object-cover"/>
+            </div>
+            <!-- <div id="project-img"></div> -->
+            <p class="regular-20 color-medium-grey md:leading-7 my-12">${item.content}</p>
+        `
+        projectDiv.innerHTML += div;
+      }
+
+      window.addEventListener('load', () => {
+          getUuid()
+      })
       
     </script>
+    <script src="/home.js"></script>
   </body>
 </html>
