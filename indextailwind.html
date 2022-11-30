@@ -16,27 +16,27 @@
     <nav class="flex flex-col justify-between md:flex-row">
       <div class="flex flex-wrap justify-between items-center">
         <div>
-          <img class="w-40 m-auto md:m-0 md:w-16 " alt="logo circle" src="../IMG/logos/circle.svg" /> </a>
+          <img class="w-40 mx-4 md:mx-0 md:w-16" alt="logo circle" src="../IMG/logos/circle.svg" /></a>
         </div>
-        <div class="burger md:hidden">
+        <div class="burger md:hidden mx-4">
           <div class="bar1 h-1 w-7 my-1.5 bg-blue-700 duration-300"></div>
           <div class="bar2 h-1 w-7 my-1.5 bg-blue-700"></div>
           <div class="bar3 h-1 w-7 my-1.5 bg-blue-700 duration-300"></div>
         </div>
       </div>
-      <ul class="links md:flex flex-col md:flex-row md: justify-around items-center my-7 hidden">
+      <ul class="links md:flex flex-col md:flex-row md:justify-around items-center my-7 hidden text-center">
         <li class="md:mx-16 regular-17 color-medium-grey"><a href="index.html">Home</a></li>
-        <li class="md:mx-16 regular-17 color-medium-grey"><a href="project.html">Projects</a></li>
-        <li class="md:mx-16 regular-17 color-medium-grey"><a href="#">Services</a></li>
+        <li class="md:mx-16 regular-17 color-medium-grey"><a href="#projects">Projects</a></li>
+        <li class="md:mx-16 regular-17 color-medium-grey"><a href="#services">Services</a></li>
       </ul>
       <button
-        class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a
+        class="bg-dark-blue w-fit px-3 py-1 color-white shadow-md regular-17 mx-auto my-12 md:mx-0 md:my-0 md:px-8 md:h-fit md:py-3"><a
           title="Fill up the form" href="contact.html">Contact Us</a></button>
     </nav>
   </header>
 
   <!-- /* Section Hero */ -->
-  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto md:flex md:flex-row">
     <div class="mx-10 top-6">
       <h1 class="bold-60 color-dark-grey">Empower Your Business With Stunning Design!</h1>
       <h3 class="regular-20 color-medium-grey my-6">Circle is a digital design and development studio. We design and
@@ -50,16 +50,16 @@
           href="projects.html">See our work</a></li>
       </ul>
     </div>
-    <div class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
-      <img class="w-96" src="/IMG/hero-section/hero-image.png" alt="image hero">
-      <img class="hidden " src="/IMG/hero-section/card-1.png" alt="card 1">
-      <img class="hidden" src="/IMG/hero-section/card-2.png" alt="card 2">
+    <div class="h-auto w-auto mx-5 my-20 md:m-0 relative md:p-20">
+      <img class="w-96 md:w-auto" src="/IMG/hero-section/hero-image.png" alt="image hero">
+      <img class="hidden lg:w-72 lg:inline lg:absolute md:top-0 md:left-0" src="/IMG/hero-section/card-1.png" alt="card 1">
+      <img class="hidden lg:w-72 lg:inline lg:absolute md:bottom-0 md:right-0" src="/IMG/hero-section/card-2.png" alt="card 2">
     </div>
   </section>
 
   <!-- /* Sección Costumers */ -->
   <section
-    class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto flex flex-row flex-wrap md:justify-between justify-center">
+    class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto md:mb-28 flex flex-row flex-wrap md:justify-between justify-center">
     <img src="/IMG/logos/airbnb-logo.svg" alt="Airbnb logo" class="w-32 m-5">
     <img src="/IMG/logos/google-logo.svg" alt="Google logo" class="w-32 m-5">
     <img src="/IMG/logos/microsoft-logo.svg" alt="Microsoft logo" class="w-32 m-5">
@@ -68,7 +68,7 @@
   </section>
 
   <!-- /* Sección Projects */ -->
-  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto" id="projects">
     <h2 class="bold-40 color-dark-grey my-6">Recent Projects</h2>
     <div class="flex flex-col md:flex-row md:justify-between" id="divPrincipal">
       
@@ -84,7 +84,7 @@
       </div>
       <div class="">
         <h3 class="bold-40 color-white my-6">Hear What Our Clients Have to Say</h3>
-        <p class="medium-17 color-yellow">"Circle helped us through every stage of our startup. We really enjoyed
+        <p class="medium-17 color-yellow mx-10 my-6">"Circle helped us through every stage of our startup. We really enjoyed
           working with you"</p>
         <div>
           <img class="w-3/12 float-left" src="./IMG/testimonial-section/memoji-3.png" alt="Memoji 1">
@@ -93,7 +93,7 @@
         <div class="flex flex-row">
           <img class="w-1/4  rounded-full " src="./IMG/testimonial-section/profile.png" alt="profile" class="profile">
           <div class="bottom-">
-            <p class="regular-15 color-medium-blue">Kristen Watson</p>
+            <p class="regular-15 color-medium-blue ml-2">Kristen Watson</p>
             <p class="regular-13 color-white ">Booking.com</p>
           </div>
         </div>
@@ -104,11 +104,11 @@
 
 
   <!-- /* Sección Services -->
-  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
+  <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto" id="services">
     <h2 class="bold-40 color-dark-grey my-6">Our Services</h2>
     <div class="flex flex-col md:flex-row md:justify-between">
       <div class="bg-white my-8 md:w-96 shadow-lg">
-        <img src="./IMG/services-section/icons/1.svg" alt="pen icon" class="md:h-60 md:w-full ">
+        <img src="./IMG/services-section/icons/1.svg" alt="pen icon" class="md:h-60 md:w-full mt-4 ml-4">
         <div class="p-6 text-left md:pb-10  ">
           <p class="medium-24 color-dark-grey">User Interface Design</p>
           <p class="regular-17 color-medium-grey m-3">Circle provides you with a stunning user interface design that is
@@ -117,7 +117,7 @@
         </div>
       </div>
         <div class="bg-white my-8 md:w-96 shadow-lg">
-          <img src="./IMG/services-section/icons/2.svg" alt="pointer icon" class="md:h-60 md:w-full ">
+          <img src="./IMG/services-section/icons/2.svg" alt="pointer icon" class="md:h-60 md:w-full mt-4 ml-4">
           <div class="p-6 text-left md:pb-10">
             <p class="medium-24 color-dark-grey">User Experience Design</p>
             <p class="regular-17 color-medium-grey m-3">Circle always focuses on delivering the best user experience to
@@ -126,7 +126,7 @@
           </div>
         </div>
         <div class="bg-white my-8 md:w-96 shadow-lg">
-          <img src="./IMG/services-section/icons/3.svg" alt="iframe icon" class="md:h-60 md:w-full ">
+          <img src="./IMG/services-section/icons/3.svg" alt="iframe icon" class="md:h-60 md:w-full mt-4 ml-4">
           <div class="p-6 text-left md:pb-10">
           <p class="medium-24 color-dark-grey">Application Development</p>
           <p class="regular-17 color-medium-grey m-3">We develop high-quality mobile and web applications using the
