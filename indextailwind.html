@@ -32,8 +32,11 @@
       <h3 class="regular-20 color-medium-grey my-6">Circle is a digital design and development studio. We design and develop astonishing websites and mobile
         apps.</h3>
       <ul>
-        <button class="bg-dark-blue w-fit px-4 py-2 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a href="#">Get in touch</a></button></li>
-        <a class = "w-fit px-3 py-1 color-medium-grey  regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3" href="projects.html">See our work</a></li>
+        <button id="getintouch"
+          class="bg-dark-blue w-fit px-4 py-2 color-white shadow-md regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"><a
+            href="#">Get in touch</a></button></li>
+        <a class="w-fit px-3 py-1 color-medium-grey  regular-17 m-auto md:m-0 md:px-8 md:h-12 md:py-3"
+          href="projects.html">See our work</a></li>
       </ul>
     </div>
     <div class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
@@ -78,6 +81,20 @@
   </section>
 
   <!-- /* Sección Clients-->
+  <section class="bg-image">
+    <div class="flex flex-col items-center text-center justify-between h-3/6 w-2/4">
+      <img class="w-2/5 bottom-5 left-14" src="./IMG/testimonial-section/memoji-1.png" alt="Memoji 1">
+      <img class="w-2/5 " src="./IMG/testimonial-section/memoji-2.png" alt="Memoji 2">
+      <div class="testimonial-text">
+        <h3 class="bold-40 color-white my-6">Hear What Our Clients Have to Say</h3>
+        <p class="medium-24 color-yellow">"Circle helped us through every stage of our startup. We really enjoyed working with you"</p>
+        <div class="flex flex-row">
+          <img class= "w-1/5  rounded-full "src="./IMG/testimonial-section/profile.png" alt="profile" class="profile">
+          <div class="testimonial-info">
+            <p class="regular-15 color-medium-blue">Kristen Watson</p>
+            <p class="regular-13 color-white ">Booking.com</p>
+          </div>
+        </div>
 
   <!-- REMEMBER: que la imagen es un png con solo las esferas, tenemos que ponerle el background color para que se vean -->
   <section class="testimonial h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto" style="background-image: url(IMG/testimonial-section/orbit.png);">
@@ -97,7 +114,11 @@
         <p class="client-name">Kristen Watson</p>
         <p class="client-web">Booking.com</p>
       </div>
+
+      <img class="w-2/5" src="./IMG/testimonial-section/memoji-3.png" alt="Memoji 3">
+      <img class="w-2/5" src="./IMG/testimonial-section/memoji-4.png" alt="Memoji 4">
     </div>
+
   </section>
 
   <!-- /* Sección Services -->
@@ -105,28 +126,28 @@
     <h2 class="bold-40 color-dark-grey my-6">Our Services</h2>
     <div class="flex flex-col md:flex-row md:justify-between">
       <div class="bg-white my-8 md:w-96 shadow-lg">
-        <div class="service-box">
-          <img src="./IMG/services-section/icons/1.svg" alt="pen icon" class="md:h-60 md:w-full">
+        <div class="p-6 text-left md:pb-10  bg-dark-grey rounded-full">
+          <img src="./IMG/services-section/icons/1.svg" alt="pen icon" class="md:h-60 md:w-full ">
         </div>
-        <h4 class="medium-24 color-dark-grey" >User Interface Design</h4>
+        <h4 class="medium-24 color-dark-grey">User Interface Design</h4>
         <p>Circle provides you with a stunning user interface design that is accesible to everyone</p>
         <a href="#" class="learn-more">Learn More</a>
       </div>
-      <div class="services-card">
-        <div class="service-box">
+      <div class="bg-white my-8 md:w-96 shadow-lg">
+        <div class="p-6 text-left md:pb-10">
           <img src="./IMG/services-section/icons/2.svg" alt="pointer icon">
         </div>
-        <h4>User Experience Design</h4>
-        <p>Circle always focuses on delivering the best user experience to your customers.</p>
-        <a href="#" class="learn-more">Learn More</a>
+        <h4 class= "medium-24 color-dark-grey">User Experience Design</h4>
+        <p class="regular-17 color-medium-grey m-3">Circle always focuses on delivering the best user experience to your customers.</p>
+        <a href="#" class="regular-17 color-dark-blue cursor-pointer">Learn More</a>
       </div>
-      <div class="services-card">
-        <div class="service-box">
+      <div class="bg-white my-8 md:w-96 shadow-lg">
+        <div class="p-6 text-left md:pb-10">
           <img src="./IMG/services-section/icons/3.svg" alt="iframe icon">
         </div>
-        <h4>Application Development</h4>
-        <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-        <a href="#" class="learn-more">Learn More</a>
+        <h4 class= "medium-24 color-dark-grey">Application Development</h4>
+        <p class="regular-17 color-medium-grey m-3">We develop high-quality mobile and web applications using the latest technology stack.</p>
+        <a href="#" class="regular-17 color-dark-blue cursor-pointer">Learn More</a>
       </div>
     </div>
   </section>
