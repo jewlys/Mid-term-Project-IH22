@@ -76,8 +76,8 @@
       <!-- Section other projects -->
       <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
           <h3 class="bold-40 color-dark-grey my-6">Other Projects</h3>
-          <div class="flex flex-col md:flex-row md:justify-between">
-            <div class="bg-white my-8 md:w-96 shadow-lg">
+          <div class="flex flex-col md:flex-row md:justify-between" id="div-other-projects">
+            <!-- <div class="bg-white my-8 md:w-96 shadow-lg">
               <img alt="orbit img" src="IMG/projects-section/4.jpg" class="md:h-60 md:w-full"/>
               <div class="p-6 text-left md:pb-10">
                 <p class="medium-24 color-dark-grey">Orbit</p>
@@ -100,7 +100,7 @@
                 <p class="regular-17 color-medium-grey mt-2 mb-8">App Development</p>
                 <a class="regular-17 color-dark-blue cursor-pointer" href="#">Learn more</a>
               </div>
-            </div>
+            </div> -->
           </div>
       </section>
 
@@ -143,8 +143,9 @@
         const postId = params.get("uuid");
 
         const filtered = data.filter((project) => project.uuid === postId)
-       
+
         addContent(filtered[0])
+        addThreeProjects(data)
       }
 
       
@@ -162,8 +163,32 @@
             <p class="regular-20 color-medium-grey md:leading-7 my-12">${item.content}</p>
         `
         projectDiv.innerHTML += div;
+      }
 
-     
+      function addThreeProjects(projects){
+        const sorted = projects.sort((item1, item2) => {
+          if(Math.random() > 0.5){
+            return 1
+          } else {
+            return -1
+          }
+        })
+        const threeRandomProjects = sorted.slice(0, 3);
+
+        threeRandomProjects.forEach(project => {
+          const divOther = document.getElementById("div-other-projects");
+          const divProjects = `
+          <div class="bg-white my-8 md:w-96 shadow-lg">
+              <img alt="${project.name}" src="${project.image}" class="md:h-60 md:w-full"/>
+              <div class="p-6 text-left md:pb-10">
+                <p class="medium-24 color-dark-grey">${project.name}</p>
+                <p class="regular-17 color-medium-grey mt-2 mb-8">${project.description}</p>
+                <a class="regular-17 color-dark-blue cursor-pointer" href="project.html?uuid=${project.uuid}">Learn more</a>
+              </div>
+            </div>
+          `
+          divOther.innerHTML += divProjects;
+        });
       }
 
       window.addEventListener('load', () => {
