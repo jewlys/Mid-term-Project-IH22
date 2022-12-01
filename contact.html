@@ -44,7 +44,7 @@
             <input type="text" id="phone" placeholder="Enter your phone number" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:order-6">
             <label for="message" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-7">Message</label>
             <textarea id="message" cols="30" rows="10" placeholder="Write your message here ..." class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-8"></textarea>
-            <button id="submit-button" class="bg-dark-blue medium-17 color-white w-full py-2 md:order-9 md:col-span-2 md:py-4 hover:bg-blue-700 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
+            <button class="bg-dark-blue medium-17 color-white w-full py-2 md:order-9 md:col-span-2 md:py-4 hover:bg-blue-700 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
         </form>
     </section>
 
@@ -65,11 +65,11 @@
             </ul>
         </div>
     </footer>
+    <script src="js/home.js"></script>
     <script>
         function validateForm(){
-            console.log("hola")
+            // let form = document.forms["contact-form"];
             let formName = document.getElementById("name");
-            let formEmail = document.getElementById("email")
             let nameValue = formName.value;
             let emailValue = formEmail.value;
             if(nameValue.toLowerCase() === "ironhack"){
@@ -96,7 +96,7 @@
             
         }
 
-        let contactForm = document.querySelector("#contact-form");
+        let submitButton = document.querySelector("#submit-button");
 
 
         contactForm.addEventListener('submit', (event) => {
