@@ -54,6 +54,10 @@
     background-color: var(--darkBlue);
 }
 
+.bg-medium-blue{
+    background-color: var(--mediumBlue);
+}
+
 .bg-light-blue{
     background-color: var(--lightBlue);
 }
