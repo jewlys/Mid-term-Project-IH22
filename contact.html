@@ -66,12 +66,15 @@
     </footer>
     <script>
         function validateForm(){
-            // let form = document.forms["contact-form"];
             let formName = document.getElementById("name");
+            let formEmail = document.getElementById("email")
             let nameValue = formName.value;
-            if(nameValue.toLowerCase === "ironhack"){
+            let emailValue = formEmail.value;
+            if(nameValue.toLowerCase() === "ironhack"){
                 alert("You cannot be Ironhack, because I am Ironhack");
-                return false;
+            }
+            if(!emailValue.includes("@")){
+                alert("You must use a correct Email");
             }
         }
 
@@ -79,7 +82,7 @@
 
         submitButton.addEventListener('click', () => {
             validateForm()
-            alert("Message sent")
+            
         })
         
     </script>
