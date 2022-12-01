@@ -80,16 +80,22 @@
       const API_URL = "https://raw.githubusercontent.com/ironhack-jc/mid-term-api/main/projects-v2";
 
       async function getUuid(){
-        const response = await fetch(API_URL);
-        const data = await response.json();
+        try{
+          const response = await fetch(API_URL);
+          const data = await response.json();
+          console.log(data)
+          
+          const params = new URLSearchParams(window.location.search);
+          const postId = params.get("uuid");
+
+          const filtered = data.filter((project) => project.uuid === postId)
+
+          addContent(filtered[0])
+          addThreeProjects(data)
+        } catch(error) {
+          document.querySelector("body").innerHTML = `<h1 class="text-center bold-40">404 ERROR</h1> <p class="text-center regular-20">Not Found</p>`;
+        }
         
-        const params = new URLSearchParams(window.location.search);
-        const postId = params.get("uuid");
-
-        const filtered = data.filter((project) => project.uuid === postId)
-
-        addContent(filtered[0])
-        addThreeProjects(data)
       }
 
       
