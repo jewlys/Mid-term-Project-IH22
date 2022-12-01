@@ -34,7 +34,8 @@
     <!-- Section form -->
     <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
         <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:ml-3 md:mb-12">Contact Us</h1>
-        <form name="contact-form" action="contact.html" method="get" class="w-auto m-4 md:grid md:grid-cols-2">
+        <div id="alert" class="div-alert"></div>
+        <form name="contact-form" action="contact.html" method="get" class="w-auto m-4 md:grid md:grid-cols-2" id="contact-form">
             <label for="name" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-1">Full Name *</label>
             <input type="text" id="name" placeholder="Enter your full name" required class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-2">
             <label for="email" class="regular-20 color-medium-grey w-full md:order-3">Email</label>
@@ -66,26 +67,46 @@
     </footer>
     <script>
         function validateForm(){
+            console.log("hola")
             let formName = document.getElementById("name");
             let formEmail = document.getElementById("email")
             let nameValue = formName.value;
             let emailValue = formEmail.value;
+
+            let errorAlert = document.getElementById("alert");
             if(nameValue.toLowerCase() === "ironhack"){
-                alert("You cannot be Ironhack, because I am Ironhack");
+                let div = `<div>
+                            <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">Error</div>
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                <p>You cannot be Ironhack, because I am Ironhack.</p>
+                            </div>
+                        </div>`
+                successAlert.innerHTML = div;
+                return false
             }
             if(!emailValue.includes("@")){
-                alert("You must use a correct Email");
+                let div = `<div>
+                            <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">Error</div>
+                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
+                                <p>You must enter a correct Email.</p>
+                            </div>
+                        </div>`
+                successAlert.innerHTML = div;
+                return false
             }
+
+            alert("success!!!!!")
+            return true
         }
 
-        let submitButton = document.querySelector("#submit-button");
+        let contactForm = document.querySelector("#contact-form");
 
-        submitButton.addEventListener('click', () => {
-            validateForm()
-            
+        contactForm.addEventListener('submit', (event) => {
+            if (!validateForm()){
+                event.preventDefault()
+            }
         })
         
     </script>
     <script src="js/home.js"></script>
     <script>
-       
