@@ -34,7 +34,7 @@
     <!-- Section form -->
     <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
         <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:ml-3 md:mb-12">Contact Us</h1>
-        <form action="/" method="get" class="w-auto m-4 md:grid md:grid-cols-2">
+        <form name="contact-form" action="contact.html" method="get" class="w-auto m-4 md:grid md:grid-cols-2">
             <label for="name" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-1">Full Name *</label>
             <input type="text" id="name" placeholder="Enter your full name" required class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-2">
             <label for="email" class="regular-20 color-medium-grey w-full md:order-3">Email</label>
@@ -43,7 +43,7 @@
             <input type="text" id="phone" placeholder="Enter your phone number" class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:order-6">
             <label for="message" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-7">Message</label>
             <textarea id="message" cols="30" rows="10" placeholder="Write your message here ..." class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-8"></textarea>
-            <button class="bg-dark-blue medium-17 color-white w-full py-2 md:order-9 md:col-span-2 md:py-4 hover:bg-blue-700 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
+            <button id="submit-button" class="bg-dark-blue medium-17 color-white w-full py-2 md:order-9 md:col-span-2 md:py-4 hover:bg-blue-700 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Submit</button>
         </form>
     </section>
 
@@ -64,6 +64,25 @@
             </ul>
         </div>
     </footer>
+    <script>
+        function validateForm(){
+            // let form = document.forms["contact-form"];
+            let formName = document.getElementById("name");
+            let nameValue = formName.value;
+            if(nameValue.toLowerCase === "ironhack"){
+                alert("You cannot be Ironhack, because I am Ironhack");
+                return false;
+            }
+        }
+
+        let submitButton = document.querySelector("#submit-button");
+
+        submitButton.addEventListener('click', () => {
+            validateForm()
+            alert("Message sent")
+        })
+        
+    </script>
     <script src="js/home.js"></script>
     <script>
        
