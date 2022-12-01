@@ -34,7 +34,7 @@
     <!-- Section form -->
     <section class="h-auto w-auto mx-5 my-20 md:w-8/12 md:mx-auto">
         <h1 class="bold-60 color-dark-grey text-center md:text-left mb-8 md:ml-3 md:mb-12">Contact Us</h1>
-        <div id="alert" class="div-alert"></div>
+        <div id="alert"></div>
         <form name="contact-form" action="contact.html" method="get" class="w-auto m-4 md:grid md:grid-cols-2" id="contact-form">
             <label for="name" class="regular-20 color-medium-grey w-full md:col-span-2 md:order-1">Full Name *</label>
             <input type="text" id="name" placeholder="Enter your full name" required class="mb-8 mt-2 bg-medium-grey-op1 color-medium-grey w-full regular-17 p-2 md:p-4 md:col-span-2 md:order-2">
@@ -67,9 +67,10 @@
     </footer>
     <script src="js/home.js"></script>
     <script>
+        
         function validateForm(){
-            // let form = document.forms["contact-form"];
             let formName = document.getElementById("name");
+            let formEmail = document.getElementById("email");
             let nameValue = formName.value;
             let emailValue = formEmail.value;
             if(nameValue.toLowerCase() === "ironhack"){
@@ -81,23 +82,19 @@
                 return false
             }
             
-                let successAlert = document.getElementById("alert");
-                let div = `<div>
-                            <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">Success</div>
-                            <div class="border border-t-0 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
-                                <p>We received your message.</p>
-                            </div>
-                        </div>`
-                successAlert.innerHTML = div;
-                console.log(successAlert)
-                // alert("success!!!!!")
-                return true
+            let successAlert = document.getElementById("alert");
+            let div = `<div>
+                        <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">Success</div>
+                        <div class="border border-t-0 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
+                            <p>We received your message.</p>
+                        </div>
+                    </div>`
+            successAlert.innerHTML = div;
             
-            
+            return true
         }
 
-        let submitButton = document.querySelector("#submit-button");
-
+        let contactForm = document.querySelector("#contact-form");
 
         contactForm.addEventListener('submit', (event) => {
             // if (!validateForm()){
