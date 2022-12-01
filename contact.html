@@ -72,39 +72,39 @@
             let formEmail = document.getElementById("email")
             let nameValue = formName.value;
             let emailValue = formEmail.value;
-
-            let errorAlert = document.getElementById("alert");
             if(nameValue.toLowerCase() === "ironhack"){
-                let div = `<div>
-                            <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">Error</div>
-                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-                                <p>You cannot be Ironhack, because I am Ironhack.</p>
-                            </div>
-                        </div>`
-                successAlert.innerHTML = div;
+                alert("You cannot be Ironhack, because I am Ironhack");
                 return false
             }
             if(!emailValue.includes("@")){
+                alert("You must use a correct Email");
+                return false
+            }
+            
+                let successAlert = document.getElementById("alert");
                 let div = `<div>
-                            <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">Error</div>
-                            <div class="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
-                                <p>You must enter a correct Email.</p>
+                            <div class="bg-green-500 text-white font-bold rounded-t px-4 py-2">Success</div>
+                            <div class="border border-t-0 border-green-400 rounded-b bg-green-100 px-4 py-3 text-green-700">
+                                <p>We received your message.</p>
                             </div>
                         </div>`
                 successAlert.innerHTML = div;
-                return false
-            }
-
-            alert("success!!!!!")
-            return true
+                console.log(successAlert)
+                // alert("success!!!!!")
+                return true
+            
+            
         }
 
         let contactForm = document.querySelector("#contact-form");
 
+
         contactForm.addEventListener('submit', (event) => {
-            if (!validateForm()){
+            // if (!validateForm()){
+                validateForm()
                 event.preventDefault()
-            }
+            //}
+            
         })
         
     </script>
