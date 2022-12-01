@@ -23,7 +23,7 @@ function addProjects(projects){
     threeFirstProjects.forEach(project => {
         const divPrincipal = document.getElementById("divPrincipal");
         const div = `
-            <div class="bg-white my-8 mx-4 md:w-96 shadow-lg">
+            <div class="bg-white my-8 mx-4 md:w-96 hover:shadow-lg">
                 <img class="md:h-60 md:w-full" src="${project.image}" alt="${project.name}">
                 <div class="p-6 text-left md:pb-10">
                 <p class="medium-24 color-dark-grey">${project.name}</p>
