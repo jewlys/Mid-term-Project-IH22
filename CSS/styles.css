@@ -177,3 +177,13 @@
         font-size: var(--txt60);
     }
 }
+.logo img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter 600ms ease;
+    -webkit-transition: -webkit-filter 600ms ease;
+}
+.logo img:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
