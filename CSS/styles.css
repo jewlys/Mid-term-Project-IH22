@@ -32,17 +32,6 @@
     --lightGrey: #F2F4FC;
     --skyBlue: #ECF7FF;
     --yellow: #FFC600;
-    /* Gaps */
---gap-sm: 60px;
---gap-md: 106px;
-
-/* Paddings */
---padding-sm: 15px;
---padding-md: 36px;
---padding-lg: 37px;
-
-    /* border radiuses */
-  --br-md: 30px;
 }
 
 *{
@@ -117,7 +106,7 @@
 .bold-60{
     font-family: var(--roboto);
     font-weight: var(--bold);
-    font-size: var(--txt60);
+    font-size: var(--txt40);
 }
 
 .bold-50{
@@ -180,5 +169,11 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+}
+
+
+@media (min-width: 768px){
+    .bold-60{
+        font-size: var(--txt60);
+    }
 }
